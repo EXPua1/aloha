@@ -17,17 +17,17 @@ const Footer = () => {
                     </p>
                 </div>
 
-                {/* Навигация */}
+              
                 <div className={css.column}>
                     <h3 className={css.heading}>Quick Links</h3>
                     <ul className={css.navList}>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        {/* <li><a href="#contact">Contact</a></li> */}
                     </ul>
                 </div>
 
-                {/* Контакты и соцсети */}
+              
                 <div className={css.column}>
                     <h3 className={css.heading}>Contact Us</h3>
                     <address className={css.address}>

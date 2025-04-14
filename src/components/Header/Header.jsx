@@ -24,7 +24,7 @@ const Header = () => {
                     <ul className={css.navList}>
                         <li><a href="/">Home</a></li>
                         <li><a href="#benefits">Benefits</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        {/* <li><a href="#contact">Contact</a></li> */}
                     </ul>
 
                     <address className={css.address}>
