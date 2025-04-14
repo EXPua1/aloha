@@ -6,6 +6,7 @@ import { Container, Section } from "./components";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Benefits from "./components/Benefits/Benefits";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       
       <Hero />
       <Benefits />
+      <Footer />
      
 
 

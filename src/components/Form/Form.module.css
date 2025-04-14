@@ -49,7 +49,7 @@
 
 .textarea:focus,
 .inputEmail:focus {
-    border-color: #ffb700; /* Коралловый при фокусе */
+    border-color: #ffb700; 
     box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.2);
     outline: none;
 }
@@ -57,7 +57,7 @@
 .button {
     width: 100%;
     padding: 12px;
-    background: #ffb700; /* Коралловый фон кнопки */
+    background: #ffb700; 
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -69,12 +69,12 @@
 }
 
 .button:hover {
-    background: #F95B5B; /* Светлее при hover */
+    background: #F95B5B; 
     transform: scale(1.02);
 }
 
 .statusWrapper {
-    min-height: 24px; /* Зарезервированное место, чтобы не прыгало */
+    min-height: 24px; 
     text-align: center;
     margin-top: 16px;
 }
@@ -87,16 +87,16 @@
 }
 
 .status.success {
-    color: #10B981; /* Зеленый для успеха */
+    color: #10B981; 
     opacity: 1;
 }
 
 .status.error {
-    color: #F87171; /* Коралловый для ошибки */
+    color: #F87171; 
     opacity: 1;
 }
 
-/* Адаптивность */
+
 @media (max-width: 375px) {
     .form {
         padding: 24px;
