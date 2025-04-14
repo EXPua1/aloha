@@ -10,7 +10,9 @@ const Hero = () => {
         <Section id={"hero"} className={css.section} >
             <Container className={css.container}>
                 <div className={css.container}>
-                    <h2 className={css.title}>A quick solution to your car disposal problem</h2>
+                    <h2 className={css.title}>
+                        A <span className={css.accent}>quick</span> solution to your car disposal problem
+                    </h2>
                 </div>
                 <Form/>
             </Container>
