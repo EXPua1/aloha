@@ -6,7 +6,7 @@ import { FiZap, FiEye, FiClock, FiShield } from 'react-icons/fi';
 
 const Benefits = () => {
     return (
-        <Section id="benefits">
+        <Section id="benefits" className={css.section}>
             <Container>
                 <h2 className={css.title}>Why you should sell your car with us?</h2>
                 <ul className={css.list}>

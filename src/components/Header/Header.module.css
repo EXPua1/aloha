@@ -1,5 +1,5 @@
 .header {
-    background: #1E3A8A; /* Темно-синий */
+    background: #1E3A8A; 
     padding: 16px 0;
     position: fixed;
     top: 0;
@@ -27,7 +27,7 @@
 .logoIcon {
     width: 20px;
     height: 20px;
-    color: #FBBF24; /* Песочный */
+    color: #FBBF24; 
 }
 
 .logo a {
