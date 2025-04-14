@@ -43,7 +43,7 @@ const Footer = () => {
                         </ul>
                     </address>
                     <div className={css.socials}>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/marketplace/profile/100084928774278/" target="_blank" rel="noopener noreferrer">
                             <FiFacebook className={css.socialIcon} />
                         </a>
                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
@@ -56,7 +56,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* Копирайт */}
+            
             <div className={css.copy}>
                 <p>© 2025 Hawaii Parts. All rights reserved.</p>
             </div>
