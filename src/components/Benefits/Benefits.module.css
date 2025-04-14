@@ -1,41 +1,88 @@
 .list {
-    margin-top: 55px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 блока в ряд */
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
     list-style: none;
     padding: 0;
 }
 
-.list li {
+.item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 12px; /* Отступ между иконкой и текстом */
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    color: #1E3A8A; /* Темно-синий текст */
+    text-align: center;
+    background: #FFFFFF; 
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.item:hover {
+    transform: translateY(-4px); 
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 16px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
-.list li:nth-child(1) .icon { color: #F87171; } /* Молния - коралловый */
-.list li:nth-child(2) .icon { color: #1E3A8A; } /* Глаз - синий */
-.list li:nth-child(3) .icon { color: #10B981; } /* Часы - зеленый */
-.list li:nth-child(4) .icon { color: #FBBF24; } /* Щит - песочный */
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #1E3A8A; /* Темно-синий */
+    margin: 0;
+    margin-bottom: 15px;
+}
 
+.description {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    opacity: 0.8;
+}
 
+/* Цвета иконок */
+.list li:nth-child(1) .icon { color: #F87171; } 
+.list li:nth-child(2) .icon { color: #1E3A8A; } 
+.list li:nth-child(3) .icon { color: #10B981; }
+.list li:nth-child(4) .icon { color: #FBBF24; } 
+
+/* Адаптивность */
 @media (max-width: 768px) {
     .list {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 375px) {
     .list {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        padding: 16px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
     }
 }

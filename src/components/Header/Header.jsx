@@ -41,12 +41,12 @@ const Header = () => {
                     </address>
                 </nav>
 
-                {/* Кнопка CTA */}
-                <a href="#add-car" className={css.ctaButton}>
+               
+                <a href="#hero" className={css.ctaButton}>
                     <IoCarOutline className={css.ctaIcon} /> Add Car
                 </a>
 
-                {/* Бургер-меню */}
+              
                 <button className={css.menuToggle} onClick={toggleMenu}>
                     {isMenuOpen ? <FiX /> : <FiMenu />}
                 </button>
