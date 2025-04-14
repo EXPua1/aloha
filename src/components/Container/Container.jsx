@@ -1,7 +1,8 @@
-import style from "./Container.module.css";
+import clsx from 'clsx';
+import css from './Container.module.css';
 
-const Container = ({ children }) => {
-  return <div className={style.container}>{children}</div>;
+const Container = ({ children, className }) => {
+  return <div className={clsx(css.container, className)}>{children}</div>;
 };
 
 export default Container;

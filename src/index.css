@@ -1,28 +1,74 @@
-/* src/index.css */
-
-body {
-  font-family: sans-serif;
-  line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+/* Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
+
+
+html,
+body {
+  height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.5;
+  background-color: #e4e4eb;
+  color: #0c0b0b;
+}
+
 
 ul,
 ol {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
+li {
+  padding: 0;
+  margin: 0;
+}
+
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Форматування зображень */
 img {
-  display: block;
   max-width: 100%;
+  height: auto;
+}
+
+
+iframe {
+  border: none;
 }
