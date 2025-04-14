@@ -16,7 +16,9 @@ body {
   background-color: #e4e4eb;
   color: #0c0b0b;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 
 ul,
 ol {
