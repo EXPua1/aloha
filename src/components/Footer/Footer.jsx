@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className={css.column}>
                     <div className={css.logo}>
                         <FiMapPin className={css.logoIcon} />
-                        <a href="/">Aloha Cars</a>
+                        <a href="/">Hawaii parts</a>
                     </div>
                     <p className={css.description}>
                         Finding your dream car on the islands since 2020.
