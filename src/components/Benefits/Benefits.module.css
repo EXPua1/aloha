@@ -1,5 +1,41 @@
-.list{
+.list {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 блока в ряд */
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    align-items: center;
+    gap: 12px; /* Отступ между иконкой и текстом */
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #1E3A8A; /* Темно-синий текст */
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+.list li:nth-child(1) .icon { color: #F87171; } /* Молния - коралловый */
+.list li:nth-child(2) .icon { color: #1E3A8A; } /* Глаз - синий */
+.list li:nth-child(3) .icon { color: #10B981; } /* Часы - зеленый */
+.list li:nth-child(4) .icon { color: #FBBF24; } /* Щит - песочный */
+
+
+@media (max-width: 768px) {
+    .list {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 375px) {
+    .list {
+        grid-template-columns: 1fr; 
+    }
 }

@@ -1,75 +1,113 @@
 .form {
-    
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  padding: 40px;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-  color: #000000;
-}
-.label{
-    color: #000000;
+    background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+    padding: 32px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+ 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .input {
-  width: 100%;
-  margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
-.input label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  
+.label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1E3A8A; /* Темно-синий */
+    margin-bottom: 8px;
 }
-.input_email{
+
+.icon {
+    width: 20px;
+    height: 20px;
+    color: #ffb700; /* Коралловый для иконок */
+}
+
+.textarea,
+.inputEmail {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #1E3A8A; /* Синие границы */
     border-radius: 8px;
-    border: 1px solid #ccc;
-    padding-left: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-textarea {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  resize: none;
+.textarea {
+    resize: none;
+    height: 120px;
 }
 
-button {
-  padding: 12px 24px;
-  font-size: 16px;
-  background-color: #ffb700;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.textarea:focus,
+.inputEmail:focus {
+    border-color: #ffb700; /* Коралловый при фокусе */
+    box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.2);
+    outline: none;
 }
 
-button:hover {
-  background-color: #c79109;
+.button {
+    width: 100%;
+    padding: 12px;
+    background: #ffb700; /* Коралловый фон кнопки */
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
 }
 
+.button:hover {
+    background: #F95B5B; /* Светлее при hover */
+    transform: scale(1.02);
+}
 
 .statusWrapper {
-  min-height: 24px;
-  margin-top: 15px;
+    min-height: 24px; /* Зарезервированное место, чтобы не прыгало */
+    text-align: center;
+    margin-top: 16px;
 }
 
 .status {
-  color: green;
-  font-weight: bold;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.status.success {
+    color: #10B981; /* Зеленый для успеха */
+    opacity: 1;
+}
+
+.status.error {
+    color: #F87171; /* Коралловый для ошибки */
+    opacity: 1;
+}
+
+/* Адаптивность */
+@media (max-width: 375px) {
+    .form {
+        padding: 24px;
+    }
+
+    .textarea,
+    .inputEmail {
+        font-size: 12px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
 }
