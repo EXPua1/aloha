@@ -11,7 +11,7 @@ const Hero = () => {
             <Container className={css.container}>
                 <div className={css.container}>
                     <h2 className={css.title}>
-                        A <span className={css.accent}>quick</span> solution to your car disposal problem
+                        Are you looking to sell your car quickly and get the best value in Hawaii? Look no further! At <span className={css.accent}>Hawaii.Parts</span>, we make selling your car simple and stress-free.
                     </h2>
                 </div>
                 <Form/>

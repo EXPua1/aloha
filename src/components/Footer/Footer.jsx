@@ -36,10 +36,10 @@ const Footer = () => {
                                 <FiMail className={css.icon} />
                                 <a href="mailto:alexhawaiiparts@gmail.com">alexhawaiiparts@gmail.com</a>
                             </li>
-                            <li>
+                            {/* <li>
                                 <FiPhone className={css.icon} />
                                 <a href="tel:+380961111111">+38 096 111 11 11</a>
-                            </li>
+                            </li> */}
                         </ul>
                     </address>
                     <div className={css.socials}>
